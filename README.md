@@ -42,8 +42,9 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - Designing Mongoose schemas for real apps
 - Relational-style references & population
 
+---
 
-### Projects Included
+## Projects Included
 
 - **1-HTML-CSS-JS**      | Mini-projects like To-Do App, Weather App, Portfolio, Furniture website, Bookstore, BikeMart 
 - **2-React-Projects**   |
@@ -51,7 +52,7 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - **4-Fullstack-Apps**   |
 
 
-### Tools & Tech Stack
+## Tools & Tech Stack
 
 - **Languages**: HTML, CSS, JavaScript, TypeScript
 - **Frontend**: React.js, Angular, Bootstrap, Tailwind
@@ -59,7 +60,6 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - **Database**: MongoDB, Mongoose
 - **Tools**: Git, GitHub, Vite, Angular CLI, VS Code
 
----
 
 ## Why This Repository?
 
