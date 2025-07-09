@@ -27,7 +27,6 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - TypeScript and dependency injection
 - Clean project structure and scalable architecture
 
----
 
 ### Backend Development
 
@@ -42,17 +41,16 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - Designing Mongoose schemas for real apps
 - Relational-style references & population
 
----
 
-### Projects Included
+## Projects Included
 
 - **1-HTML-CSS-JS**      | Mini-projects like To-Do App, Weather App, Portfolio, Furniture website, Bookstore, BikeMart 
 - **2-React-Projects**   |
 - **3-Angular-Projects** | 
 - **4-Fullstack-Apps**   |
----
 
-### Tools & Tech Stack
+
+## Tools & Tech Stack
 
 - **Languages**: HTML, CSS, JavaScript, TypeScript
 - **Frontend**: React.js, Angular, Bootstrap, Tailwind
@@ -60,7 +58,6 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - **Database**: MongoDB, Mongoose
 - **Tools**: Git, GitHub, Vite, Angular CLI, VS Code
 
----
 
 ## Why This Repository?
 
@@ -69,7 +66,6 @@ It includes self-paced learning modules, mini projects, and full-stack builds.
 - **Organized Learning**: Clear folder structure focuses on one skill, building from basics to advanced topics.
 - **Step-by-Step Guidance**: Each topic explained clearly with examples and best practices.
 
----
 
 ## What’s Next?
 - Explore advanced React-Angular patterns
