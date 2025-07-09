@@ -43,15 +43,15 @@ Whether you're just starting or already have front-end experience, this reposito
 
 ---
 
-## 🧪 Projects Included
+### 🧪 Projects Included
 
-1-HTML-CSS-JS      | Mini-projects like To-Do App, Weather App, Portfolio, Furniture website, Bookstore, BikeMart 
-2-React-Projects   |
-3-Angular-Projects | 
-4-Fullstack-Apps   |
+- **1-HTML-CSS-JS**      | Mini-projects like To-Do App, Weather App, Portfolio, Furniture website, Bookstore, BikeMart 
+- **2-React-Projects**   |
+- **3-Angular-Projects** | 
+- **4-Fullstack-Apps**   |
 ---
 
-## Tools & Tech Stack
+### Tools & Tech Stack
 
 - **Languages**: HTML, CSS, JavaScript, TypeScript
 - **Frontend**: React.js, Angular, Bootstrap, Tailwind
