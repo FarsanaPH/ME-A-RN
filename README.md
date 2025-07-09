@@ -1,6 +1,7 @@
 # MEARN — My MERN/MEAN Stack Learning & Projects Hub
 
 Welcome to my **MEARN** repository! - a dedicated space where I learn and build with MERN and MEAN.
+
 This repo showcases my journey as a full-stack developer — from fundamentals to building real-world applications. 
 It includes self-paced learning modules, mini projects, and full-stack builds.
 
