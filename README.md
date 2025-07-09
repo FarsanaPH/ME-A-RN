@@ -3,10 +3,11 @@
 Welcome to my **MEARN** repository! - a dedicated space where I learn and build with MERN and MEAN.
 
 This repo showcases my journey as a full-stack developer — from fundamentals to building real-world applications. 
-It includes self-paced learning modules, mini projects, and full-stack builds.
 
 Whether you're just starting or already have front-end experience, this repository will guide you through building powerful and scalable web applications using modern technologies-
 **MongoDB**, **Express.js**, **Angular**, **React.js**, and **Node.js**.
+
+It includes self-paced learning modules, mini projects, and full-stack builds.
 
 ---
 
@@ -43,7 +44,7 @@ Whether you're just starting or already have front-end experience, this reposito
 
 ---
 
-### 🧪 Projects Included
+### Projects Included
 
 - **1-HTML-CSS-JS**      | Mini-projects like To-Do App, Weather App, Portfolio, Furniture website, Bookstore, BikeMart 
 - **2-React-Projects**   |
@@ -77,5 +78,6 @@ Whether you're just starting or already have front-end experience, this reposito
 - Deploy MERN & MEAN apps 
 - Build reusable UI components for personal portfolio projects
 
+---
 
-> ⭐ Star the repo to follow my full-stack skills with both Angular and React!
+> ⭐ Star the repo to follow my full-stack journey with Angular and React!
