@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--  -->
+    <link rel="shortcut icon" href="./media//favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="bgcolor">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="./media/logo2.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center ">
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="#">work</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="#">Press + Testimonials</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <button id="contactbtn" class="btn py-3 px-4 rounded rounded-0">Contact</button>
+                            </li>
+                            <li class="nav-item me-3">
+                                <i class="fa-brands fa-facebook fa-2x d-none d-lg-block"></i>
+                            </li>
+                            <li class="nav-item me-3">
+                                <i class="fa-brands fa-instagram fa-2x d-none d-lg-block"></i>
+                            </li>
+                            <li class="nav-item me-3">
+                                <i class="fa-brands fa-x-twitter fa-2x d-none d-lg-block"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Home -->
+            <div id="welcome">
+                <h4>WELCOME TO</h4>
+                <h1>FURNICOM</h1>
+                <h1>FURNITURE</h1>
+                <button class="btn mt-3 px-4 py-3 rounded-0 mb-5">CONTACT</button>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <div id="work">
+            <h1 class="text-center">Our Works</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 p-5">
+                        <div class="card bg-transparent border-0" style="width: 100%;">
+                            <img id="cardimage"
+                                src="https://hfoc.com.au/cdn/shop/products/IMG_4373_550x.jpg?v=1548059769"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">FINE FURNITURE</h5>
+                                <a href="#" id="cardbtn" class="btn mt-3"> View Work</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-5">
+                        <div class="card bg-transparent border-0" style="width: 100%;">
+                            <img id="cardimage"
+                                src="https://luxykitchens.com/wp-content/uploads/2023/02/Kitchen-design-near-miami-Gardens-scaled.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CABINETRY</h5>
+                                <a href="#" id="cardbtn" class="btn mt-3">View Work</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-5">
+                        <div class="card bg-transparent border-0" style="width: 100%;">
+                            <img id="cardimage"
+                                src="https://media.designcafe.com/wp-content/uploads/2023/07/05120637/modern-furniture-designs.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">COLLABORATIVE WORKS</h5>
+                                <a href="#" id="cardbtn" class="btn mt-3"> View Work</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="container-fluid pt-5 pb-5" id="about">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="aboutdiv mt-5">
+                        <img class="" src="https://images.woodenstreet.de/image/data/Blog%20images/7thapril/2.jpg"
+                            alt="" width="108%" height="430px">
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 mt-5 pe-5">
+                    <h2>ABOUT</h2>
+                    <h1>FURNICOM FURNITURE</h1>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi, error maiores mollitia
+                        facilis sunt libero quidem dicta accusamus natus reiciendis magni maxime hic ea cumque in
+                        dolores soluta doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi,
+                        error maiores mollitia facilis sunt libero quidem dicta accusamus natus reiciendis magni maxime
+                        hic ea cumque in dolores soluta doloribus. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quam modi, error maiores mollitia facilis sunt libero quidem dicta accusamus natus
+                        reiciendis magni maxime hic ea cumque in dolores soluta doloribus. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quam modi, error maiores mollitia facilis sunt libero quidem dicta
+                        accusamus natus reiciendis magni maxime hic ea cumque in dolores soluta doloribus.</p>
+                    <button id="aboutbtn" class="btn rounded-0 px-4 py-3">View More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Gallery -->
+        <div class="container-fluid" id="gallery">
+            <div class="row pt-5 pb-5">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 mt-2">
+                    <h1 class="text-center mb-5">PROJECT GALLERY</h1>
+                    <div class="row">
+                        <div class="col-md-8 ">
+                            <div class="d-flex justify-content-center position-relative">
+                                <img src="https://cdn.shopify.com/s/files/1/0044/1208/0217/files/BOSTON3STRLS1_900x.jpg?v=1724991129"
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 104px;">
+                                    <h3> ROSEWOOD CLUB CHAIR</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-center" style="position: relative; ">
+                                <img src="https://media.istockphoto.com/id/520536109/photo/contemporary-elegant-luxury-living-room.jpg?s=612x612&w=0&k=20&c=B2qVuu2PPjkw_CebnOicutAJdSa9K_z5IB4TnZWOTY4="
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 50px;">
+                                    <h3> VICE CABINET</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3" style="position: relative; ">
+                                <img src="https://www.insaraf.com/cdn/shop/collections/sq_sofa_cum_bde_d8e91096-1f40-4206-9d14-f1e4f6472d61_533x.jpg?v=1666854459"
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 50px;">
+                                    <h3> SIDE TABLES</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <div class="container-fluid" id="gallery">
+            <div class="row pt-5">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 mt-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-center" style="position: relative; ">
+                                <img src="https://media.istockphoto.com/id/520536109/photo/contemporary-elegant-luxury-living-room.jpg?s=612x612&w=0&k=20&c=B2qVuu2PPjkw_CebnOicutAJdSa9K_z5IB4TnZWOTY4="
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 50px;">
+                                    <h3> VICE CABINET</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3" style="position: relative; ">
+                                <img src="https://www.insaraf.com/cdn/shop/collections/sq_sofa_cum_bde_d8e91096-1f40-4206-9d14-f1e4f6472d61_533x.jpg?v=1666854459"
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 50px;">
+                                    <h3> SIDE TABLES</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="d-flex justify-content-center position-relative">
+                                <img src="https://cdn.shopify.com/s/files/1/0044/1208/0217/files/BOSTON3STRLS1_900x.jpg?v=1724991129"
+                                    alt="" class="w-75">
+                                <div class="div1 d-flex"
+                                    style="position: absolute; bottom: 0; left: 0; margin-left: 104px;">
+                                    <h3> ROSEWOOD CLUB CHAIR</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btni p-5" style="display: flex; justify-content: center; align-items: center;">
+                        <button class="btn rounded-0 px-5 py-4" id="viewmorebtn">
+                            <h4>VIEW ALL WORK</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <!-- image slides-->
+        <div class="row ">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Media/Firstslide.jpg" class="d-block w-100" alt="..." height="750px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>First slide label</h1>
+                            <h4>Some representative placeholder content for the first slide.</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Media/Secondlside.jpg" class="d-block w-100" alt="..." height="750px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Second slide label</h1>
+                            <h4>Some representative placeholder content for the second slide.</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Media/Thirdslide.jpg" class="d-block w-100" alt="..." height="750px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Third slide label</h1>
+                            <h4>Some representative placeholder content for the third slide.</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- testimonial -->
+        <div class="row bg-white pt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1 style="text-align: center;">TESTIMONIALS</h1>
+                <p class="mt-4 ms-5">What people are saying</p>
+                <div class="row mb-5">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center p-3">
+                        <div class="card shadow rounded-0 p-5 d-flex justify-content-center align-items-center"
+                            style="width: 100%;">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle"
+                                alt="..." width="150px" height="150px">
+                            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title">Maria Smantha</h5>
+                                <h6 class="text-primary mt-3">Web Developer</h6>
+                                <p class="card-text mt-3"><i class="fa-solid fa-quote-left me-2"></i>Lorem ipsum dolor
+                                    sit
+                                    amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad
+                                    velit ab hic tenetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center p-3">
+                        <div class="card shadow rounded-0 p-5 d-flex justify-content-center align-items-center"
+                            style="width: 100%;">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle"
+                                alt="..." width="150px" height="150px">
+                            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title">Lisa Cudrow</h5>
+                                <h6 class="text-primary mt-3">Graphic Designer</h6>
+                                <p class="card-text mt-3"><i class="fa-solid fa-quote-left me-2"></i>Ut enim ad minima
+                                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                                    aliquid
+                                    commodi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center p-3">
+                        <div class="card shadow rounded-0 p-5 d-flex justify-content-center align-items-center"
+                            style="width: 100%;">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle"
+                                alt="..." width="150px" height="150px">
+                            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title">John Smith</h5>
+                                <h6 class="text-primary mt-3">Marketing Specialist</h6>
+                                <p class=" mt-3"><i class="fa-solid fa-quote-left me-2"></i>At vero eos et accusamus et
+                                    iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                                    corrupti.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- footer -->
+        <div class="row p-5" style="background-color: rgb(33 37 41);">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3 class="text-center" style="color: white;">About Us</h3>
+                <p class="mt-4" style="text-align: justify; color: white;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Libero, temporibus. Porro voluptatum quibusdam vitae reiciendis. Incidunt itaque,
+                    rerum voluptates omnis temporibus neque accusantium quaerat quos corrupti repellat, dicta magni
+                    explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga maxime eaque quo eius
+                    cum
+                    natus quae molestias voluptate eos commodi eveniet possimus neque aliquam, harum facilis tempora
+                    inventore eum?</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1 text-center">
+                <h3 style="color: white;">Navigation</h3>
+
+                <a href="" style="color: white;">
+                    <h5 class="mt-4">Home</h5>
+                </a>
+                <a href="" style="color: white;">
+                    <h5>About</h5>
+                </a>
+                <a href="" style="color: white;">
+                    <h5>Services</h5>
+                </a>
+                <a href="" style="color: white;">
+                    <h5>Contact</h5>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3" style="color: white;">
+                <h3>Follow Us</h3>
+                <div class="d-flex  mt-4">
+                    <input type="text" placeholder="Email Id" class="form-control">
+                    <button class="btn btn-warning ms-3">Subscribe</button>
+                </div>
+                <div class="d-flex mt-4 justify-content-between" style="color: white;">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+
+    </div>
+</body>
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+</html>

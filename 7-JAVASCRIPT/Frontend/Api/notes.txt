@@ -1,0 +1,96 @@
+API- Application programming interface
+
+ued to communicate between different resources available on internet
+
+TYPES OF API
+-------------
+
+1. Public API - publically available
+2. Private API - only to a single user(company)
+3. Partner API - datashare between two or more users
+4. Composite API - interconnected network of different APIs
+
+HTTP- HYPERTEXT TRANSFER PROTOCOL
+--------------------------------------
+       => Set of internet rules that need to be followed while transfering data between the resources in internet.
+       Protocol- Set of rules
+       reffer-https,smpt,tcp,soap,rpc.......
+
+      HTTP Methods
+      --------------
+      1.get- to retrieve data from other resources
+      2.post- to add data
+      3.put- to update existing data
+      4.delete- to remove data
+
+      Request have 2 parts-
+        1. request header - secret keys, content-type
+        2. request body- data
+
+    Response series 
+    ----------------
+    1. informational response(100-199)
+    2. succesful response(200-299)
+    3. redirection response(300-399)
+    4. client error(400-499)
+    5. server error(500-599)
+
+    JSON format(Javascript object notation)
+    -------------------------------------------
+    common format to share data between resources
+    format-
+          {
+            "key": value          
+          }
+
+          {
+            "name": "farsana"
+            "age": 28          
+          }
+
+      URL-Uniform Resource Locator
+
+      Restful api architecture-
+      api is send in json format request in form of get,post etc to backend and in return response get in response series 1xx,2xx,3xx,4xx,5xx
+  
+   
+    Tools to test API-
+    ------------------
+    1. POSTMAN-real tool
+    2. ThunderClient- vs code extension
+
+    Techniques to create API in frontend
+    ---------------------------------------
+    1. AJAX(not commonly used)
+    2. FETCH
+    3. ASYNC-AWAIT
+
+    AJAX- Asynchronous Javascript XML(asynchronous means have time delay)
+    --------------------------------------------------------
+    -works based on XMLHTTPRequest() class.
+    -open() - communicate between resources
+    -send() - request is send to other resources
+    - ReadyState - property in the class
+    - onreadystatechange- check the chnge in the value of the ReadyState
+    - status - property in the class which checks the response status from the application  which we are communicating
+    - responseText - hold the data from the application
+
+    FETCH
+    ------
+    -works based on promise class
+    -promise class has the ability to resolve asynchronous function(time delay)
+    - promise have 3 phases
+      1.resolve phase - if the request is properly resolved
+                        .then() - the response can be accessed using then method
+      2.pending phase - neither resolved nor rejected
+      3.reject phase - if the request is not properly solved
+                       .catch() - response will be accessed using catch method
+
+    ASYN-AWAIT(not a method like ajax and fetch)
+    -----------
+    -it helps asynchrounous function to behave like synchrounous function . reduce call back hell
+    -call async in fnc and await in api call
+    -single then()
+    -store the response to a variable
+    -trycatch- error handling
+    

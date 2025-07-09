@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Key Frames</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            border: green solid 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: colorChange 5s;
+
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: aqua;
+                transform: translateX(100px);
+            }
+
+            25% {
+                background-color: rgb(15, 160, 160);
+                transform: translateY(100px);
+
+            }
+
+            50% {
+                background-color: rgb(208, 210, 88);
+                transform: scale(0.5);
+
+            }
+
+            75% {
+                background-color: rgb(209, 101, 87);
+                transform: rotate(30deg);
+
+            }
+
+            100% {
+                background-color: rgb(122, 87, 209);
+                transform: scale(1);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Content</h1>
+    </div>
+
+</body>
+
+</html>

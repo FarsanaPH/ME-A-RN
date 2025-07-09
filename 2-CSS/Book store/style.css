@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+#head1{
+    margin-left: 20px;
+}
+li,
+ul,
+h1 {
+    display: inline;
+}
+
+ul {
+    margin-left: 60%;
+}
+
+li {
+    margin-left: 50px;
+}
+
+/* home */
+
+#home {
+    background-image: url('./360_F_321974259_BnmlxfkknMol8HiQ0dg1bwQizor48uB9.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.home-content{
+    padding-top: 180px;
+    padding-left: 50%;
+    width: 40%;
+}
+#wel1{
+    font-size: 5rem;
+}
+#wel2{
+    color: white;
+    font-size: 5rem;
+}
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#btn1{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#btn2{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Book section */
+#bookSection{
+    padding-top: 20px;
+}
+.headbook{
+    text-align: center;
+}
+#fambooks{
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+.card{
+    width: 350px;
+    height: 600px;
+    background-color: rgb(42, 42, 91);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid orange;
+    border-radius: 10px;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+}
+#bookname{
+    color: white;
+    padding: 5px 2px;
+}
+#bookDescription{
+    padding: 10px;
+    color: rgb(169, 169, 169);
+}
+.bookBtns{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+#bookbtn1{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#bookbtn2{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}

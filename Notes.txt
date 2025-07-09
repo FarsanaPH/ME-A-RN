@@ -1,0 +1,1036 @@
+-------------------- HTML ----------------------------
+HTML - HYPERTEXT MARKUP LANGUAGE
+
+-> Markup language - provides contents to webpage.
+-> its a tag based language.
+-> Tag - <tagname>........... </tagname>
+    1. opening tag
+    2. closing tag
+
+    Basic structure
+    --------------
+    <html>
+        <head>
+            <title>Title Name</title>
+        </head>
+        <body>
+                ... contents ...
+        </body>
+    </html>
+
+  =>  For creating html file the extention of the filename should be .html sfter the filename. Ex: prgm.html
+
+  Bacis tags
+  ---------
+  1. Heading tags
+        1.<h1>This is Heading Tag 1</h1>
+        2.<h2>this is heading tag 2</h2>
+        3.<h3>this is heading tag 3</h3>
+        4.<h4>this is heading tag 4</h4>
+        5.<h5>THis is Heading Tag 5</h5>
+        6.<h6>This is Heading Tag 6</h6>
+    2. Paragraph Tag -> <p> ...... </p>
+    3. Break tag -> <br>
+    4. horizontal rule / line -> <hr>
+
+Formatting tags
+---------------
+-> It defines a text with a special meaning. Used to display special types of text.
+        1. Bold Tag -> <b> Bold Tag </b>
+        2. Strong Tag -> <strong> Strong Tag </strong>
+        3. Italic tag -> <i> Italic Tag </i> 
+        4. Underline Tag -> <u> Underline tag </u> 
+        5. Mark -> <mark>Mark Tag</mark>
+        6. Smaller -> <small> Smaller Tag </small>
+        7. Inserted -> <ins> Inserted Tag </ins> 
+        8. Deleted -> <del> Deleted tag </del>
+        9. Subscript -> <sub> Subscript tag </sub>
+        10. Superscript -> <sup>Superscript tag</sup>
+
+HTML Elements
+-------------
+    => Html Elements is everthing from start tag to end tag.
+    => <tagname> content </tagname>
+
+HTML nested elements
+--------------------
+    => Elements can contain other elements.
+    => All the html elements consists of nested html elements.
+    
+
+HTML Attributes
+---------------
+    => All the html elements can have Attributes.
+    => Attributes provides Additional information about elements.
+    => Attribues always specified in start tag.
+    => Attributes always comes in name/value pairs. Ex : width="500px"
+
+    SRC Attriubutes
+    ---------------
+        => SRC Attributes specifies the path of the image.
+        => The img tag is used to embed an image inside the html page.
+
+
+
+HTML-  Current version 5
+------------------------
+        <!DOCTYPE html> - version
+        <html lang="en"> - language
+            <head>
+                <meta charset="UTF-8"> - encoding
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                ................
+            </body>
+        </html>
+
+    HTML 5 - updates
+    ----------------
+    1. Sematic tags : meaning/organize content of webpage.
+                        => developer - readbility.
+                        => Browser - reduces loading time.
+                        => SEO.
+                            <nav></nav>
+                            <header></header>
+                            <aside></aside>
+                            <footer></footer>
+                            <section></section>
+                            <main></main>
+                            <article></article>
+    2. Media
+        => video
+        => audio
+        => figure & figure caption
+
+List
+----
+    => Lists are used to show items in sequence.
+    Types of Lists
+    --------------
+        1. Ordered List (<ol></ol>) - Numbered list
+        2. Unordered List (<ul></ul>) - Bullted List
+        3. Definition List (<dl></dl>) - For terms and definition
+
+Forms
+-----
+    => Forms collects Data from users ( Like login, feedback etc...)
+
+Table
+-----
+    => Tables used to display data in rows and columns.
+
+
+----------------------------------------------------------------------------------------
+------------------------------       CSS     -------------------------------------------
+----------------------------------------------------------------------------------------
+
+CSS - Cascading Style Sheet
+---------------------------
+    => Used to style html documents.
+
+    THere are 3 ways to use CSS
+    ---------------------------
+    1. Inline CSS
+            <tagname style="Property : value; property... ">content</tagname>
+    2. Internal CSS
+            <style>
+                selectors {
+                    Property : value;
+                    Property : value;
+                    pro...
+                }
+            </style>
+    3. External CSS
+        => extention of filename should be .css (filename.css) 
+
+        Better css
+        ----------
+        1. Can resuce size of the html document.
+        2. Reduce website loading time.
+        3. Complexcity - readbility can be increased.
+        4. Can use the css file in other html document. (Reuseablity)
+
+        Selectors 
+        ---------
+            => used to identify the html content that need to be style.
+            => there are different types of selectors.
+                1. tagname selector.
+                2. id selector -> used to uniquely style a content.
+                                -> reperesent by (#) in css file.
+                3. class selector -> used to style a group of content
+                                -> reperesent by ( . ) in css file.
+    
+    Priority => Inline > Internal > External
+
+CSS BOX MODEL
+-------------
+    => Its a concept of creating a box  that wraps around every html elements.
+        1. Border => its a line drawn around the elements. By default they are invisible but can be shown with the use css properites.
+        2. Padding => its a space between the Border and the content.
+        3. Margin => Its a space between border and the outer space.
+
+    Different styles of border 
+    --------------------------
+    - solid
+    - dotted
+    - dashed
+    - double
+    - ridge
+    - groove
+    - inset
+    - outset
+
+    padding: 50px; 4sides 50px
+
+    padding: 50px 20px 80px 100px; 
+             top  right bottom left
+
+    padding: 80px 20px
+                top & Bootom / right & left
+
+CDN - Content delivery network
+
+Pseudo class
+------------
+    -> reperesents a special state of an elements.
+    -> eg: - hover, link(unvisted), visted, active
+    syntax:- 
+            selector:pseudo{
+                property : value
+            }
+    
+Display Property
+----------------
+    Inline -> Same line, fill the size of the content, cannot set width and height.
+    inline-block -> Same line, fill the size of the content, we can set width and heigth.
+    block -> Different Line, fill the size of entire width, we can set height and width.
+    None -> this will hide the elemnets from html.
+
+
+position properites
+-------------------
+    => it specifies the type of postioning method used for an element.
+    => types : static, relative, absolute, fixed, sticky
+
+    -> relative : The element is poaitioned relative to its normal postion.
+    -> absolute : The element will be positioned related to its parent with position as relative.
+
+    1. Static -> Default, follows the normal doucument flow.
+    2. Relative -> Positioned relative to its normal postion.
+    3. Absolute -> Positioned relative to its nearest positioned ancestor.
+    4. Fixed -> Positioned relative to its viewport, remains fixed during scrolling.
+    5. Sticky -> The position sticky is hybrid between relative and fixed.
+
+Transform Property
+------------------
+    => to provide a 2d or 3d tranformation to a given element.
+    => type : translate(), scale(), rotate()
+
+Linear Gradient : it create a smooth transition between two or more colors
+                syntax : background-image : linear-gradient (direction, color1, color2 , .. colorn)
+
+Animation
+---------
+    animation : animationName, time;
+
+    @keyframe animationName{
+        0%{
+            property : value
+        }
+        ......
+
+         100%{
+            property : value
+        }
+    }
+
+Z-index
+--------
+    => It determines the stack order of the html elements.
+    => its applicable to elements with position.
+    => The element having highest value will be placed at the top.
+
+Media Queries
+-------------
+    => Media queries are css Techniques used to apply styles on characteristics like screen size, device type or other features. They enable the creation of responsive web designs, adjusting layouts for optimal display on variaous device and screen size.
+        => Syntax:-
+                    @media (expression){
+                        selector{
+                            property : values
+                        }
+                    }
+        Device Breakpoints
+        ------------------
+        extra small = <600px
+        small device = 600px - 768px
+        medium = 768px - 992px
+        large = 992px - 1200px
+        extra large = >1200px
+
+
+CSS Variables
+-------------
+    => Variables are used to store data (value).
+    => types of Variables
+        1. Global Variables - can access throught =out tha css file.
+            styntax :- 
+                        :root{
+                            --variablename : value
+                        } 
+        2. Local variable - can access only in block level
+            styntax :- 
+                        selector{
+                            --variablename : value
+                        } 
+ 
+
+----------------------------------------------------------------------------------------
+---------------------------       Bootstrap     ----------------------------------------
+----------------------------------------------------------------------------------------
+    => its most popular html, css & JavaScript framework for delevepment of a website.
+    => Easy to build Responsive websites.
+
+    Features of Bootstrap
+    ----------------------
+        1. It gives a set of css classes.
+        2. pre-build components.
+        3. Responsive Grid System.
+        4. Customization of components.
+        5. JavaScript plugin to make components intractive.
+
+    Commonly used bootstrap classes
+    -------------------------------
+    1. container - give your margin for left and right side.
+    2. container-fluid - will avoids margin.
+    3. border - give border for the element. (0-5)
+    4. margin - give you margin for the element. m (0-5)
+        margin-top - mt-1
+        margin-bottom - mb-5
+        margin-left - ms-2 (start)
+        margin-right - me-5 (end)
+    5. padding - give you padding for the element. p (0-5)
+        padding-top - pt-1
+        padding-bottom - pb-5
+        padding-left - ps-2 (start)
+        padding-right - pe-5 (end)
+    6. colors-  Primary - blue
+                secondary - grey
+                Danger - red
+                success - green
+                warning - orange
+                info - light blue
+                light - white
+                dark - black
+    7. Width - w (25, 50, 75, 100)
+    8. button - btn  
+
+
+Bootstrap Grid System
+----------------------
+    => container  or container-fluid
+    => 1st create row -> .row
+    => set values in col -> .col
+
+
+Bootstrap Breakpoint
+-------------------
+    Breakpoint -	Class infix	-       Dimensions
+    ----------------------------------------------
+    Extra small   	    None        	<576px
+    Small	            sm	            ≥576px
+    Medium	            md	            ≥768px
+    Large	            lg	            ≥992px
+    Extra large	        xl	            ≥1200px
+    Extra extra large	xxl	            ≥1400px
+
+
+----------------------------------------------------------------------------------------
+---------------------------       GIT & GITHUB     -------------------------------------
+----------------------------------------------------------------------------------------
+
+    GIT - Its a tool installed in the system to do operactions in GitHub.
+    GITHUB - Cloud Based platform for developers to store and manage data.
+
+    Advantages
+    ----------
+        1> To store code : 
+                => Private : Only owner can view the Repository.
+                => Public : Anyone can view the Repository.
+
+        2> To share code.
+        3> minor project - Hosting
+        4> Version Control Sysytem - It can hold Each versions of code.
+
+    Repository
+    ----------
+    Its storage space to store data.
+        Git - local Repository
+        GitHub - Remote Repository
+
+    Git operactions
+    ---------------
+        1. push -> To add code to the Repository.
+                -> Local repo to Remote repo.
+        2. clone -> to download the entire code.
+                -> remote repo to local repo.
+        3. pull -> download the updated code.
+                -> remote repo to local repo.
+
+    push operactions
+    ----------------
+    => git init - to create a git repository for a particular folder.
+    => git status - check the status of the files inside the folder.
+    => git add - to add the files into staging area of tracking.
+                1. git add filename -> add particular file in the folder.
+                2. git add . -> add all the files inside the folder.
+
+
+
+----------------------------------------------------------------------------------------
+------------------------------       JavaScript     ------------------------------------
+----------------------------------------------------------------------------------------
+JavaScript - Programming language (scripting language).
+
+    featurs of JavaScript
+    ---------------------
+    => its used to provide behaviour to a web application.
+    => used in both frontend as well as backend.
+            -> Initially js was introduced as frontend language.
+            -> v8 engine is used to run js in Browser.
+            -> nodejs Environment - have v8 engine to run the js outside the browser.
+            -> frontend - behaviour.
+            -> backend - logical operactions.
+
+    => it is categorized as Dynamically typed Language.
+            -> Dynamically typed Language - datatype changes according to the assigned value.
+    => Its a single thread programing language - line by line execution.
+    => it support both procedural and object oriented programing (oops) paradigm (style of programming)
+
+    ----------------procedural programing------------------
+
+    => js file -> filename.js
+    => run a file -> node filename.js
+
+    display
+    -------
+    console.log(content)
+
+    Datatypes
+    ---------
+    => There are two types of Datatypes in js.
+
+    1> Primitive Datatype
+    ---------------------
+    => base Datatypes
+    => immutable -> cannot change the original value, but can reassign the value.
+        1. string -> sequence of characters
+                    ex: 'text' , "text"
+        2. number -> represents integer and floating point number.
+                    ex: 25, 26.23
+        3. Bigint -> its represents larger number outside the boundary of number category.
+                    ex: 9007199254740995n; // This is a BigInt
+        4. null -> intenssional absence of value.
+                    ex: let x = null
+        5. undefined -> not assigned a value
+                    ex: let x
+        6. boolean -> logical value -> true and false
+        7. symbol -> used to uniquely identify a content.
+                  -> used in creating libraries.
+                  -> let variable = symbol("content")
+
+    2> Non Primitive Datatype
+    -------------------------
+    => derived datatype
+    => mutable -> can change the original value, and can reassign new values.
+        8. object -> data is stored in key:value 
+                    ex: array, object, function etc....
+                    -> combination of Primitive datatype.
+
+    Variables
+    ---------
+    => used to store data.
+    => idenifiers - rules to create variables.
+            -> variable name can have alphabets, numbers & underscore ets.
+            -> variable name should not starts with digit/number, but subsequence characters can be digit.
+            -> if the variable name contains more than one word, the words should not have space. (variable name)
+                    -> camelcase - variableName
+                    -> snakecase - variable_name
+
+            syntax
+            ------
+            variableName = value
+            keyword variableName = value
+
+        keyword
+        --------
+        -> set of reserved word.
+        -> it gives special meaning to the variable.
+
+        1. var - reassign is possible, redeclariation allowed, hoisting possible
+        2. const - reassign is not possible, redeclariation not allowed, hoisting is not possible
+        3. let - reassign is possible, redeclariation not allowed, block level scope, hoisting is not possible
+
+        Hoisting
+        --------
+        using a variable before it is declared.
+
+    Template Literals
+    -----------------
+    -> its a way of displaying content.
+    -> syntax : 
+                 console.log(`content ${variableName}`);
+
+
+    concatenation
+    -------------
+    -> add up of data
+        -> string + string = string
+        -> string + number = string
+        -> number + number = number
+
+    Operactors
+    ----------
+        1> Assignment Operator ( = )
+        2> Arithematic Operator
+            +, -, /, *, %(modulus), **(expontential)
+        3> Relational Operactors
+            > , >=, <, <=, == ,===
+            -> returns boolean values
+            == - compare only the values
+            === - compare value and datatype
+        4> Logical Operactors
+            -> between one or more Relational Operactors.
+            -> returns boolean value.
+                1) AND (&&)
+                    T && T = T 
+                    T && F = F
+                    F && T = F
+                    F && F = F
+
+                2) OR (||)
+                    T || T =  T 
+                    T || F =  T
+                    F || T =  T
+                    F || F =  F 
+
+                3) NOT (!)
+                    !T = F
+                    !F = T
+        5> Increment (++) / Decrement (--) operactors
+            x ++       Y --
+            x = x+1    Y = Y - 1
+        6> shorthand operactor
+            x = x+1   -  x+=1
+            y = y-1   -  y-=1
+        7> Ternary operactor
+            syntax: 
+                    condition ? true statement : false statement
+
+        8> Truthy operactor
+            syntax: 
+                    condition && true statement 
+
+    Conditional statements / decision making statements
+    ---------------------------------------------------
+    -> execute based on the Conditional
+        syntax:- 
+                if(Condition){
+                    statements
+                }else if(condition){
+                    statements
+                }else{
+                    statements
+                }
+
+            -> at a time only one case execute.
+
+    concept
+    -------
+    positive - number should be greater than 0.
+    negative - number should be less than 0.
+    zero - neither positive nor negative.
+
+    even - number divided by 2 gives reminder as zero (including 0).
+    odd - number divided by 2 doesnot gives a reminder as zero.
+
+    divisibility : A is divisible by B  means A divided by B give reminder as zero.
+
+    Looping statements
+    ------------------
+    -> Used to execute a set of code repeatedly at a particular part of a program file.
+    -> to exit a loop the condition muat be false
+        1) while
+            syntax:- 
+                    variable initialization
+                    while(condition){
+                        statements
+
+                        exit condition / Increment / Decrement statements
+                    }
+            -> when number of itteraction is not sure
+        2) for
+            syntax:- 
+                for(variable initialization; condition; exit condition){
+                    statement
+                }
+            -> when number of itteraction is known
+
+    ---------------------------------------------------
+                    function
+    ---------------------------------------------------
+
+    => To do task repeatedly at different location of the programing file.
+    => It helps to reduce number of codes in the programing file.
+    => It have two parts
+        1) Function definition -> where the task is defined.
+            syntax:- 
+                    function functionName (arg1, arg2, .... argn){
+                        statement / task
+                    }
+        2) Function call -> inorder to execute the task
+            syntax:- 
+                   functionName(arg1, arg2, .... argn)
+        argument / parameter -> values outside the function -> optional. 
+    => variable inside a function is having function scope, it cannot be accessed outside the function.
+    => Inorder to access variables outside the function we need to use return statement.
+    => statement after the return statement will not be  execute hence return statement should be placed at the last  of the function.
+
+    Arrow function
+    --------------
+    syntax :-
+            const variablename = () => statement
+            const variablename = () => { statements... }
+
+            variablename()
+    Advantages : => syntax more less as compared to regular function.
+                 => if the arrow function having single statement, then the return will happend automatically.
+                 => Better performance as compared to regular function.
+
+    Funtions Hoisting
+    -----------------
+    => Calling a function before it is defined.
+    => Functional hoisting is possible for regular function, but arrow function doesnot support functional hoisting.
+
+    Types of Functions
+    ------------------
+    1) Predefined Function
+            => These are builtin function.
+            => no need to define the function.
+            Ex:- console.log(), math.floor(), Math(), typeOf()....
+    2) Callback function
+            => Functions that are passed as an argument to another function and execute later by the parent function.
+    3) Nested Function
+            => Function defining inside another function.
+            => Closure property - variable inside the parent function can accessed inside child function but child varible cannot be accessed in parent function.
+    4) Synchronous Function
+            => Functions which doesnot have any time Delay.
+    4) Asynchronous Function
+            => Functions with time delay in execution.
+            Ex:- serTimeout, API 
+
+    Data structure
+    --------------
+    => A specialised formate for organising, processing, retriving and storing data.
+    Ex - stack, queue, array, tree, etc.....
+
+    Array 
+    -----
+    => Unlike variables array can hold more than one data.
+    => Definition : array is a single vaiable that can store more than data of different datatypes, that are seperated by commas and enclosed within  square bracket.
+
+        syntax : 
+                arrayName = [data1, data2, .... datan]
+
+    -> Each item in an array is given a index value.
+    -> index value starts with 0 and endes with length-1
+    -> number of items in an array - length ( total of location)
+
+    {
+        key:value       =      index : value
+    }
+
+    ways to access each items from an array
+    ---------------------------------------
+    1) normal for loop.
+    2) for in - Directly return indexes of the given array.
+    3) for of - return Directly the item.
+
+    Array operactions
+    -----------------
+    1. push() - To add new item to the end of an array.
+    2. unshift() - To add new item to the start of an array.
+    3. pop() - To remove the last item of an array.
+    4. shift() - To remove the first item of an array.
+    5. sort() - it arrange the given array in ascending or decending order.
+    6. forEach() - to access each item from an array - for loop.
+                syntax :-
+                        array.forEach((variable)=>statement)
+    7. map() -  to access each item from an array - it returns a new array of the same number of parent array.
+                syntax :-
+                        newArray = array.map((variable)=>statement)
+    8. reduce() - it itterate through the arrat and return a single value from the array.
+                    Ex: sum, highest, lowest, average
+                syntax :-
+                        value = array.reduce((item1, item2)=>statement)
+                        value = array.reduce((previous_value, current_value)=>statement)
+    9. filter() - it returns a new array having elements satisfying a specific condition. 
+                syntax :-
+                newArray = parentArray.filter((variable_name)=>condition)
+    10. some() - it returns boolean values based on the condition
+                syntax :-
+                value = parentArray.some((variable_name)=>condition)
+    11. find() - it returns the first element statisfing the condition.
+                    syntax :-
+                value = parentArray.find((variable_name)=>condition)
+    12. flat(depth) -> used to change the dimension of an array.
+                    -> Depth reffers to how deep a nested array need to be flattened.
+                    -> Depth = infinity makes the array change its dimention directly to 1 dimention
+    13. includes() -> to check wheather a given item is present in the array or not.
+                    syntax :-
+                            array.includes("item)
+    14. splice() -> to add or remove items at different position in an array.
+                        syntax :-
+                            array.splice(startIndex, count_to_remove, item_to_added)
+    15. indexOf() -> to get an index of an element
+    16. lastIndexOf() -> to get an index value of last element satisfying the condition.
+
+
+    Linear search
+    -------------
+    Binary -> Time Consumption by reducing the number of iteraction.
+            -> array should be in ascending order. 
+
+    Nested array : Array within an array
+    -----------
+    
+    ---------------------------------------------------
+                    String
+    ---------------------------------------------------
+
+    => sequence of characters.
+
+        string operactions
+        ----------------------
+        1. startsWith() -> it check whether a string starts with a specific character.
+                        -> case sensitive
+                        -> returns a boolean value
+        2. endsWith() -> -> it check whether a string end with a specific character.
+                        -> case sensitive
+                        -> returns a boolean value 
+        3. toUpperCase() -> to convert a string into captial letters.
+        4. toLowerCase() -> to convert a string into small letters.
+        5. substring(start, end) -> to create a sub string from a given string.
+                        -> ending index will be excluded.
+                        Syntax :- 
+                                string.subString(start, end)
+        6. slice(start, end) -> to get a small portion of an string
+                             -> ending index will be excluded.
+                             -> accept negative value as well.
+        7. trim() -> remove the space in the ends ( start and end) in given string.
+        8. replace() -> it replace the first matching search item.
+        9. replaceAll() -> It replace all the matching search items.
+        10. Array.from() -> get all characters of a string as array.
+        11. split(seperator) ->  divide the string based on the seperator and return a new array.
+
+
+
+    ---------------------------------------------------
+                    Object
+    ---------------------------------------------------
+    => unlike array it can store more than one data of different datatype with more clarity.
+    => Definition - Object is a single variable that can store more than one data of different datatype with more clarity as key:value pair, that are seperated by commas and enclosed within curly bracket.
+                syntax :-
+                        objectName = {
+                            key:value1
+                            key:value2,.....
+                        }
+
+    => To access a data from object
+            -> objectName["key"] => can be used in the case of exact key or a variable key.
+            -> objectName.key => only if there is exact key
+
+    => for in can be used to access the key in an object.
+
+    Add Data to an object
+    ---------------------
+    syntax :-
+            objectName[key] = value
+            object.assign()
+
+    update Data to an object
+    ------------------------
+    objectName[key] = value
+
+    Delete Data to an object
+    ------------------------
+    delete objectname.key
+
+
+    ------------------------------------------------------------------
+                    Oops - Object oriented Programming
+    ------------------------------------------------------------------
+    => Oops => its a modern programming paradigm(style) which consider real time entities into class and object.
+
+    Bacis
+    -----
+    1. class => Its a blueprint which contains common feature from which different objects are created.
+    2. Object => Its a real time entity created from the class
+    3. refrence => acutal memory location were properties and methods are stored.
+
+    Property => its a variable inside a class.
+    method => functions inside a class
+
+    syntax:-
+            class classname{
+                //properites
+                //constructor
+                //method
+            }
+
+    constructor => constructors are used to initialize the property.
+    No mandatory to place all the above components inside the class always.
+
+    Syntax to create a object
+    -------------------------
+    const objectName = new classname()
+
+    syntax of constructor
+    ---------------------
+    constructor(){
+    }
+
+    Syntax to define a method
+    -------------------------
+    methodname(){
+    }
+
+    ----------------------------------------------
+
+    Pillers of Oops
+    ---------------
+    1. Inheritance
+    2. Polymorphism
+    3. Encapsulation
+    4. Abstraction
+
+    1. Inheritance
+        --------------
+        => Its used to access methods and properties from one class to another
+        => Parent class -> The class from which data are taken.
+                        -> super class / base class
+        => Child class -> The class which access the data.
+                        -> derived class / sub class
+
+            Types of classical Inheritance
+            ------------------------------
+            1. single Inheritance - Directly Support
+            2. multi level Inheritance - Directly Support
+            3. hierachial Inheritance - Directly Support
+            4. multiple Inheritance - Partially support
+            5. hybrid Inheritance - Partially support
+
+    2. Polymorphism
+    ---------------
+    - poly - many
+    - morphism - Forms
+
+    1. method overloading
+    2. method overriding
+
+    1. method overloading
+    -----------------
+    => methods with same name but different arguments, execute based on number of arguments.
+    => Directly js is not supporting method overloading.
+
+    2. method overriding
+    --------------------
+    => Methods with same name and same number of arguments
+    => Execute the last written method.
+    => Js supports method overriding.
+
+    Exception Handling
+    ------------------
+    Exception - Run Time Error
+
+    Syntax
+    -------
+
+    try{
+        statements
+    }catch{
+        statements - execute only when the error in try block
+    }finally{
+        statements - execute in both case
+    }
+
+------------------------------------------------------------------
+                    JavaScript in Frontend
+------------------------------------------------------------------
+    => Runs by Browser.
+    => Browser - Its an application program that provides an interface to interact with th information / resource available on internet.
+    => Browser understanding languages - html, css & JavaScript.
+    => JavaScript provides behaviour to the webpage.
+    => JavaScript access the dom structure to provide behaviour.
+
+    DOM
+    ---
+    -> Document Object Model.
+    -> Its a tree structure of the html document.
+    -> created by browser
+
+    Ways to apply js in HTML Document.
+    ---------------------------------
+    1. Internal
+            <script></script> --- after body
+    2. External
+            need to link - <script scr="path"></script>
+            filename - filename.js
+
+    Ways to access html elements using js
+    -------------------------------------
+        1. document.getElementByTagname()
+                -> Returns HTML COLLECTIONS having all the specified tag in the html document.
+        2. document.getElementByClassname()
+                -> Returns HTML COLLECTIONS having all the tag which having the same classname.
+        3. document.getElementById()
+                -> Return the tag having the id
+        4. document.querySelector()
+                -> Can accept tag, classname and id also.
+                -> return the 1st satisfying tag.
+        5. document.querySelectorAll()
+                -> Can accept tag, classname and id also.
+                -> return all the satisfying tag.
+
+    ways to access content from a html tag.
+    --------------------------------------
+        => innerHTML
+
+    Events
+    ------
+    => Actions performed by the user which leads to a change in DOM.
+    => click, sumbit, load, change etc...
+
+    Date :- its a predefined class to fetch data from our system(pc).
+
+    DataBase -> Used to store data.
+            -> Huge amount of data can be stored.
+            -> Permanent storage
+
+        Browser Storage
+        ---------------
+        -> Small amount data can be stored.
+            1. Local Storage -> Permanent storage
+            2. Session Storage -> Temporary storage
+
+            Operactions
+            -----------
+            1. Add data -> setItem("key" : "value")
+            2. get data -> getItem("key")
+            3. update Data -> setItem("key" : "value")
+            4. remove data -> removeItem("key")
+
+    JSON.stringify -> to convert to string.
+    JSON.parse -> to convert back to object.
+
+    Navigation
+    -----------
+    window.location = "filename.html
+
+    API- Application programming interface
+
+ued to communicate between different resources available on internet
+
+TYPES OF API
+-------------
+
+1. Public API - publically available
+2. Private API - only to a single user(company)
+3. Partner API - datashare between two or more users
+4. Composite API - interconnected network of different APIs
+
+HTTP- HYPERTEXT TRANSFER PROTOCOL
+--------------------------------------
+       => Set of internet rules that need to be followed while transfering data between the resources in internet.
+       Protocol- Set of rules
+       reffer-https,smpt,tcp,soap,rpc.......
+
+      HTTP Methods
+      --------------
+      1.get- to retrieve data from other resources
+      2.post- to add data
+      3.put- to update existing data
+      4.delete- to remove data
+
+      Request have 2 parts-
+        1. request header - secret keys, content-type
+        2. request body- data
+
+    Response series 
+    ----------------
+    1. informational response(100-199)
+    2. succesful response(200-299)
+    3. redirection response(300-399)
+    4. client error(400-499)
+    5. server error(500-599)
+
+    JSON format(Javascript object notation)
+    -------------------------------------------
+    common format to share data between resources
+    format-
+          {
+            "key": value          
+          }
+
+          {
+            "name": "farsana"
+            "age": 28          
+          }
+
+      URL-Uniform Resource Locator
+
+      Restful api architecture-
+      api is send in json format request in form of get,post etc to backend and in return response get in response series 1xx,2xx,3xx,4xx,5xx
+  
+   
+    Tools to test API-
+    ------------------
+    1. POSTMAN-real tool
+    2. ThunderClient- vs code extension
+
+    Techniques to create API in frontend
+    ---------------------------------------
+    1. AJAX(not commonly used)
+    2. FETCH
+    3. ASYNC-AWAIT
+
+    AJAX- Asynchronous Javascript XML(asynchronous means have time delay)
+    --------------------------------------------------------
+    -works based on XMLHTTPRequest() class.
+    -open() - communicate between resources
+    -send() - request is send to other resources
+    - ReadyState - property in the class
+    - onreadystatechange- check the chnge in the value of the ReadyState
+    - status - property in the class which checks the response status from the application  which we are communicating
+    - responseText - hold the data from the application
+
+    FETCH
+    ------
+    -works based on promise class
+    -promise class has the ability to resolve asynchronous function(time delay)
+    - promise have 3 phases
+      1.resolve phase - if the request is properly resolved
+                        .then() - the response can be accessed using then method
+      2.pending phase - neither resolved nor rejected
+      3.reject phase - if the request is not properly solved
+                       .catch() - response will be accessed using catch method
+
+    ASYN-AWAIT(not a method like ajax and fetch)
+    -----------
+    -it helps asynchrounous function to behave like synchrounous function . reduce call back hell
+    -call async in fnc and await in api call
+    -single then()
+    -store the response to a variable
+    -trycatch- error handling
+    

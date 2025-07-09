@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 10%;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 80px;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+    display: none;
+    position: absolute;
+    right: 5%;
+}
+
+#check {
+    display: none;
+}
+
+/* ------ Home ------- */
+
+.container {
+    padding-top: 100px;
+}
+
+#heading {
+    text-align: center;
+    margin: 20px;
+}
+
+.home p {
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (max-width :1200px) {
+    header {
+
+        padding: 1rem 8%;
+
+    }
+
+}
+
+@media screen and (max-width :1100px) {
+    header {
+
+        padding: 1rem 6%;
+
+    }
+}
+
+@media screen and (max-width :1070px) {
+    header {
+
+        padding: 0.8rem 4%;
+
+    }
+}
+
+@media screen and (max-width :990px) {
+    .icons {
+
+        display: flex;
+    }
+    #cancel {
+        display: none;
+    }
+    #check:checked~ .icons #menu {
+        display: none;
+    }
+    #check:checked~ .icons #cancel {
+        display: block;
+    }
+    #check:checked~ .navbar {
+        display: block;
+        height: 13rem;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(143, 140, 140);
+        width: 100%;
+    }
+    .navbar a {
+        display: block;
+        margin: 1rem 0px;
+        text-align: center;
+        font: 1rem;
+    }
+}

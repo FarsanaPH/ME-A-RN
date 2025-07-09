@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        .child{
+            border: 3px solid red;
+        }
+        #parent{
+            display: grid; /* will consider available space into grid*/
+            /* grid-template-columns: 800px 400px 200px; */
+            grid-template-columns: repeat(2, 1fr 2fr);
+            column-gap: 10px;
+            row-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+    
+</body>
+</html>

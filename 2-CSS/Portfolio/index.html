@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <!-- css - style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQVWJ8GUn5N6ByOZKE4Cp5JOEgMGBgHBGSA&s"
+        type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kablammo&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- nav -->
+        <nav id="navbar">
+            <img id="logo" src="./media/a-business-woman-who-explains-drawings_csp12051090.jpg" alt="">
+            <ul>
+                <li class="list-items"><a href="#container">HOME</a></li>
+                <li class="list-items"><a href="#about">ABOUT</a></li>
+                <li class="list-items"><a href="#skills">SKILLS</a></li>
+                <li class="list-items"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- home -->
+        <section id="home"> 
+            <div class="title">
+                <h1>I'am ANA <span id="steel">STEEL</span></h1>
+                <p>This is my official portfolio website to decsribe all <br>
+                    Details and work experience in Web Development.</p>
+                <a id="downloadbtn" download href="./media/React Hooks.pdf">Download CV</a>
+            </div>
+            <div class="imagesDiv">
+                <img id="shape" class="imageGroup" src="./media/shape.png" alt="Shape">
+                <img id="lady" class="imageGroup" src="./media/girl.png" alt="girl">
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="heading">
+                <h1>About Me</h1>
+                <span>Introduction</span>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./media/about.avif" alt="no img">
+                </div>
+                <div class="about-details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente perferendis laudantium
+                        itaque vitae quia architecto laboriosam! Iste, reprehenderit ea! Quas autem quos doloribus
+                        reprehenderit pariatur voluptatibus, repellendus cum alias?</p>
+
+                    <div class="information">
+                        <div class="info-box">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Ann Steel</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>7894561230</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>annsteel@gmail.com</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-brands fa-github"></i>
+                            <span>ansteel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skills">
+            <div class="heading">
+                <h1>My Skills</h1>
+                <span>Skills</span>
+            </div>
+            <div class="skill-container">
+                <div class="progress-bar">
+                    <div class="bar-container">
+                        <h3>HTML</h3>
+                        <span>85%</span>
+                        <div class="base-bar"></div>
+                        <div id="html-bar" class="base-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>css</h3>
+                        <span>80%</span>
+                        <div class="base-bar"></div>
+                        <div id="css-bar" class="base-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>JavaScript</h3>
+                        <span>96%</span>
+                        <div class="base-bar"></div>
+                        <div id="js-bar" class="base-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>React</h3>
+                        <span>89%</span>
+                        <div class="base-bar"></div>
+                        <div id="react-bar" class="base-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-img">
+                    <img src="./media/skills.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section id="contact">
+            <div class="heading">
+                <h1>CONTACT</h1>
+                <span>contact</span>
+            </div>
+            <div class="icon-set">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/graceson-j" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+         <footer>
+            <p>©My Protfolio Design 2025, All Rights Reserved ®️Ana Steel</p>
+            <div id="arrowUp">
+                <a href="#container"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+            </div>
+         </footer>
+    </div>
+</body>
+
+</html>

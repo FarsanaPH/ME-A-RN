@@ -1,0 +1,289 @@
+* {
+    font-family: "Playfair Display", cursive;
+    margin: 0px;
+    /*remove browser generated margin*/
+    padding: 0px;
+    /*remove browser generated padding*/
+
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    /*viewport height - related to device*/
+    /* position: relative; */
+}
+
+#navbar {
+    display: flex;
+    /*place the child tags in one line*/
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    /*to provide spacing between child tags*/
+    align-items: center;
+    /*place the child tag to vertically center*/
+}
+
+#logo {
+    width: 130px;
+}
+
+.list-items {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+li a:hover {
+    color: brown;
+}
+
+/* home */
+.title {
+    margin-top: 10%;
+    margin-left: 180px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#steel {
+    color: orange;
+}
+
+.title p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#downloadbtn {
+    background-color: black;
+    color: orange;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.imagesDiv {
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.imageGroup {
+    position: absolute;
+    height: 75vh;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.imagesDiv:hover #shape {
+    bottom: 50px;
+
+}
+
+.imagesDiv:hover #lady {
+    left: 45%;
+}
+
+/* about */
+
+#about {
+    margin: 22% 8% 0% 8%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.heading span {
+    font-size: 25px;
+    color: orange;
+    font-weight: 600;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+
+.about-details {
+    margin-top: 30px;
+}
+
+.about-img img {
+    width: 80%;
+}
+
+.about-details p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.information {
+    margin-top: 30px;
+}
+
+.info-box {
+    margin: 15px;
+}
+
+.info-box span {
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Skills  */
+#skills {
+    margin: 5% 8%;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-img img {
+    width: 90%;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    padding: 20px 0px;
+
+}
+
+.base-bar {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    height: 0.7rem;
+    bottom: 0px;
+}
+
+#html-bar {
+    background-color: orange;
+    width: 85%;
+}
+
+#css-bar {
+    background-color: orange;
+    width: 80%;
+}
+
+#js-bar {
+    background-color: orange;
+    width: 96%;
+}
+
+#react-bar {
+    background-color: orange;
+    width: 89%;
+}
+
+.bar-container span {
+    font-weight: 700;
+}
+
+/* contact */
+.icon-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding: 10px 0px;
+}
+
+.icons,
+#arrowUp {
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.icons a {
+    color: black;
+}
+
+.icons a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.icons:hover {
+    background-image: linear-gradient(to bottom right, yellow, rgb(255, 115, 0), blue);
+}
+
+.icons:hover i {
+    animation: shake 0.75s;
+}
+
+@keyframes shake {
+    20% {
+        transform: rotate(15deg);
+    }
+
+    30% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+#arrowUp {
+    background-image: linear-gradient(to bottom right, yellow, rgb(255, 115, 0), blue);
+    float:right;
+}
+
+html{
+    scroll-behavior: smooth;
+}

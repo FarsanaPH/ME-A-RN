@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DOM</h1>
+    <h1 class="wel">welcome</h1>
+    <p class="wel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?</p>
+    <h1 id="demo">Hi</h1>
+    <button onclick="change()">Change</button>
+</body>
+<script>
+    function change() {
+        // const content = document.getElementsByTagName("h1")
+        // console.log(content[2]);
+        // content[2].innerHTML = "Document Object Model"
+        // content[2].style.color = "red"
+        // const content = document.getElementsByClassName("wel")
+        // console.log(content[1]);
+        // content[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex reiciendis adipisci recusandae repudiandae quae a voluptatibus quaerat culpa?"
+        // content[1].style.color = "red"
+        // // content[1].style.backgroundColor = "yellow"
+        // const content = document.getElementById("demo")
+        // console.log(content);
+        // // content.innerHTML = "THIS IS ID SELECTOR"
+        // content.style.color = "red"
+        // demo.innerHTML = "THIS IS ID SELECTOR"
+
+        const content = document.querySelectorAll("#demo")
+        console.log(content);
+        
+    }
+
+
+</script>
+
+</html>

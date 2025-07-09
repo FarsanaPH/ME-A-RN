@@ -1,0 +1,227 @@
+--------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------REACT--------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+   =>React is a popular open-source web application.
+   => Maintanied by Meta.
+   => It is a JS frontend library not a framework
+
+   Features
+   ---------
+   => Create UI (Frontend Technology)
+   => based on JavaScript -javascript library
+   => Single page Application - index.html, Dynamically rewrites a new content when user interact.
+   => Declarative Application - Application which does not access the DOM directly.
+   => Virtual DOM 
+        -> Its a copy of real DOM   (if virtual DOM has something new, only new send to Real DOM not all)
+        -> it is created by REACT
+        -> Recouncilation- The process of comparing the virtual DOM with real DOM
+        -> Diffing- The process of updating the real DOM as that of virtual DOM with the help of diffing algorithm
+        -> Advantages- avoid the entire application reload  after each interaction
+   => Language - JSX ie, JavaScript XML (html inside javascript)
+   => Transpiling- It is a process of converting jsx into browser understanding language with the help of BABEL library
+   => Data Sharing => Unidirectional- parent to child only with the help of predefined object called props.
+   => Use Pure function => The output will be depends only on the argument ie, only arguments value can take inside a function to call from outside.
+   => Component based - basic unit of react application (UI)
+
+   Steps to create a project
+   --------------------------
+   => create project folder
+        (cant use now)
+        -> npx create-react-app projectName (deprecated - cant use now)
+                 npx= node package execute
+
+        (new command)
+        - npm create vite@latest {projectName} ( NB: projectName not start with capslock, can use camelcase)
+                 npm= node package manager
+
+   => install node modules - npm install 
+   => to run project - npm run dev
+
+   [NB:to close terminal - ctrl+c
+     after creating projecting if taking at another time open vs code at demo then type in terminal "npm run dev" only not others needed.]
+
+
+   Files
+   ------
+   1. README.md - provides a description of the react application.
+   2. vite.config.js - it gives the configuration of vite-react
+   3. package.json - npm configuration - details of the project.
+            -> script - run project   (dev: vite --open to open browser immediately)
+            -> dependencies - name of the installed libraries
+   4. package-lock.json - it includes the version of the installed libraries and its integrity.
+   5. node-modules - it contains the copy of the installed libraries
+   6. .gitignore - it contains the names of the file that need to be ignored while adding the code into git
+   7. eslint.config.js - error handling
+   8. public folder - files or images that need to be access publicly.
+
+   HTML in react
+   --------------
+
+    syntax:
+    import statements
+            function ComponentName(){
+                //js code
+                return(
+                    //html code
+                )
+            }
+    export default componentName
+
+    [
+        NB: html tags must be inside return function
+            All html tags in a react component must be placed  inside a single parent element ; can be react fragment <></>
+            react fragment <> </>
+    ]
+
+
+    CSS in REACT (no internal)
+    -------------
+    1.inline
+            style={{ property:value; }}   eg <h1 style={{color:'red', fontSize:"10px"}} >welcome to react</h1>
+    2.external
+            => external file - componentName.css
+            => import key is used to connect the css file with jsx file
+               selector{
+                 property: value
+               }
+               eg: in componentName.css
+               h1{
+                         color: orange
+                }
+            
+            Global styling - index.css
+            styling a particular component - componentName.css
+    3.module.css
+            =>create an external file with extension module.css
+            =>must be created inside the src folder
+            =>it can be assigned to a variable for styling.
+                 eg: in component.jsx-
+                 import style from "./myStyle.module.css"
+                 <h1 className={style.wel}>welcome to Page</h1>
+                 and in myStyle.module.css-
+                 .wel{
+                        color: green;
+                  }
+     
+
+     JS code
+     --------
+     NB: To place js content inside return function, place the js content in a curly bracket
+
+     Events
+     -------
+     onclick, submit, load, change......
+     
+     In normal js-
+     onclick="functionName()"
+     
+     In react js-
+     1. without argument
+     onClick = {functionName}
+
+     2. with argument
+     onClick = { () => functionName(arg) }
+
+     StrictMode
+     ----------
+     -> detect unexpected side Effect
+     -> warns about the deprecated application
+     ->identify unsafe lifecycle methods - class components.
+     ->check the performance of the application
+
+     Components
+     -----------
+     -> basic unit of react application
+
+                Rules to create a component
+                ---------------------------
+                1. The name of the component must start with capital letter.
+                2. extension can be in .jsx or .js
+                3. rename of the component is not possible(with same name)
+                4. to access the components anywhere in the react application, it should be export from the file where it is created and import the file where to access
+                5. components is placed as self closing tag
+
+
+                Types of Components
+                -------------------
+                1. Functional components [NB: rfce- to get predefined structure]
+                        function ComponentName () {
+                                //js code
+                                return(
+                                        //html code
+                                )
+                        }
+                        export default componentName 
+
+                2. Class components [NB: rcc(react class component)- to get predefined structure]
+                        export default class Random extends Component {
+                                //js code
+                                render() {
+                                        //html+js code
+                                        return (
+                                                //html code
+                                        )
+                                }
+                        }
+    
+
+     Data Sharing
+    -------------
+     => Default (Unidirection) - parent to child only with the help of predefined object called props.
+
+     eg:1.data sharing using props in function component-
+     In parentComponent.jsx-
+     <Demo xy={name} loc={location} />
+
+     In childComponent.jsx-
+     function Demo(props) {
+        console.log(props);   //{ xy:"FARSANA PH", loc:"pattambi" }
+        return (
+           <>
+                <h1>This is a Demo Page</h1>
+                <h1>My name is :{props.xy}</h1>
+                <h1>My location is: {props.loc} </h1>
+            </>
+        )
+     }
+     export default Demo
+
+     2.data sharing using props in class component-
+       In parentComponent.jsx-
+       <Random comp={company} />
+
+       In childComponent.jsx-
+        import React, { Component } from 'react'
+
+        export default class Random extends Component {
+                constructor(props) {
+                        super(props)
+                        console.log(props);
+
+                }
+                render() {
+                        return (
+                        <>
+                                <p>This is a Random Page</p>
+                                <p>I am working at:{this.props.comp} </p>
+                        </>
+                        )
+                } 
+        }
+
+     3.data sharing without props in function component-
+        In parentComponent.jsx-
+        <Sample xy={name} comp={company} />  
+
+        In childComponent.jsx-
+        function Sample({xy,comp}) {
+        return (
+        <>
+        <h2>This is sample page</h2>
+        <h2>My name is: {xy}</h2>
+        <h2>My company is: {comp} </h2>
+        </>
+        )
+        }
+        export default Sample
