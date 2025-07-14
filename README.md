@@ -10,7 +10,6 @@ Whether you're just starting or already have front-end experience, this reposito
 
 It includes self-paced learning modules, mini projects, and full-stack builds.
 
----
 
 ## What You'll Learn
 
